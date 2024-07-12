@@ -3,10 +3,10 @@ export default class CatchGoblin {
         this._element = element;
     }
     addGoblin(index) {
-        let cells = this._element.querySelectorAll(".hole");
         if (index < 0 || index > 15) {
             throw new Error("Invalid hole number!");
         }
+        let cells = this._element.querySelectorAll(".hole");
         let img = document.createElement("img");
         img.classList.add("goblin")
         img.src = "https://raw.githubusercontent.com/netology-code/ahj-homeworks/AHJ-50/dom/pic/goblin.png";
