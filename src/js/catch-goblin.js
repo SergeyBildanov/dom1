@@ -4,7 +4,7 @@ export default class CatchGoblin {
     }
     addGoblin(index) {
         let cells = this._element.querySelectorAll(".hole");
-        if (index < 0 || index > 16) {
+        if (index < 0 || index > 15) {
             throw new Error("Invalid hole number!");
         }
         let img = document.createElement("img");
